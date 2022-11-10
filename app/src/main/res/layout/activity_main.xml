@@ -38,131 +38,131 @@
 
         </LinearLayout>
 
-        <com.simple.vclayout.VerCodeEditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:vcCount="4"
-            app:vcFocusedBackground="@drawable/sp_focused_one"
-            app:vcInputType="numberPassword"
-            app:vcMargin="5dp"
-            app:vcNormalBackground="@drawable/sp_normal_one"
-            app:vcTextSize="20sp" />
+<!--        <com.simple.vclayout.VerCodeEditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:vcCount="4"-->
+<!--            app:vcFocusedBackground="@drawable/sp_focused_one"-->
+<!--            app:vcInputType="numberPassword"-->
+<!--            app:vcMargin="5dp"-->
+<!--            app:vcNormalBackground="@drawable/sp_normal_one"-->
+<!--            app:vcTextSize="20sp" />-->
 
-        <com.simple.vclayout.VerCodeEditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:vcCount="6"
-            app:vcFocusedBackground="@drawable/sp_focused_two"
-            app:vcMargin="5dp"
-            app:vcNormalBackground="@drawable/sp_normal_two"
-            app:vcTextColor="@color/colorAccent"
-            app:vcTextSize="20sp" />
+<!--        <com.simple.vclayout.VerCodeEditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:vcCount="6"-->
+<!--            app:vcFocusedBackground="@drawable/sp_focused_two"-->
+<!--            app:vcMargin="5dp"-->
+<!--            app:vcNormalBackground="@drawable/sp_normal_two"-->
+<!--            app:vcTextColor="@color/colorAccent"-->
+<!--            app:vcTextSize="20sp" />-->
 
-        <com.simple.vclayout.VerCodeEditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            app:vcCount="4"
-            app:vcFocusedBackground="@drawable/sp_focused_one"
-            app:vcMargin="5dp"
-            app:vcMaxLength="4"
-            app:vcMinWidth="80dp"
-            app:vcNormalBackground="@drawable/sp_normal_one"
-            app:vcTextSize="20sp" />
+<!--        <com.simple.vclayout.VerCodeEditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            app:vcCount="4"-->
+<!--            app:vcFocusedBackground="@drawable/sp_focused_one"-->
+<!--            app:vcMargin="5dp"-->
+<!--            app:vcMaxLength="4"-->
+<!--            app:vcMinWidth="80dp"-->
+<!--            app:vcNormalBackground="@drawable/sp_normal_one"-->
+<!--            app:vcTextSize="20sp" />-->
 
-        <com.simple.vclayout.VerCodeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+<!--        <com.simple.vclayout.VerCodeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:inputType="number"
-                android:maxLength="3"
-                android:minWidth="70dp" />
+<!--            <EditText-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="3"-->
+<!--                android:minWidth="70dp" />-->
 
-            <View
-                android:layout_width="3dp"
-                android:layout_height="3dp"
-                android:layout_gravity="center_vertical"
-                android:background="@drawable/sp_circle" />
+<!--            <View-->
+<!--                android:layout_width="3dp"-->
+<!--                android:layout_height="3dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:background="@drawable/sp_circle" />-->
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:inputType="number"
-                android:maxLength="3"
-                android:minWidth="70dp" />
+<!--            <EditText-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="3"-->
+<!--                android:minWidth="70dp" />-->
 
-            <View
-                android:layout_width="3dp"
-                android:layout_height="3dp"
-                android:layout_gravity="center_vertical"
-                android:background="@drawable/sp_circle" />
+<!--            <View-->
+<!--                android:layout_width="3dp"-->
+<!--                android:layout_height="3dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:background="@drawable/sp_circle" />-->
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:gravity="center"
-                android:inputType="number"
-                android:maxLength="3"
-                android:minWidth="70dp" />
-        </com.simple.vclayout.VerCodeLayout>
+<!--            <EditText-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="3"-->
+<!--                android:minWidth="70dp" />-->
+<!--        </com.simple.vclayout.VerCodeLayout>-->
 
-        <com.simple.vclayout.VerCodeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+<!--        <com.simple.vclayout.VerCodeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/sr_et_bg_accent"
-                android:gravity="center"
-                android:inputType="text"
-                android:maxLength="1" />
+<!--            <EditText-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="@drawable/sr_et_bg_accent"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="text"-->
+<!--                android:maxLength="1" />-->
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/sr_et_bg_accent"
-                android:gravity="center"
-                android:inputType="text"
-                android:maxLength="1" />
+<!--            <EditText-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="@drawable/sr_et_bg_accent"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="text"-->
+<!--                android:maxLength="1" />-->
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/sr_et_bg_accent"
-                android:gravity="center"
-                android:inputType="number"
-                android:maxLength="1" />
+<!--            <EditText-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="@drawable/sr_et_bg_accent"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="1" />-->
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/sr_et_bg_accent"
-                android:gravity="center"
-                android:inputType="number"
-                android:maxLength="1" />
+<!--            <EditText-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="@drawable/sr_et_bg_accent"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="1" />-->
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/sr_et_bg_accent"
-                android:gravity="center"
-                android:inputType="number"
-                android:maxLength="1" />
-        </com.simple.vclayout.VerCodeLayout>
+<!--            <EditText-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:background="@drawable/sr_et_bg_accent"-->
+<!--                android:gravity="center"-->
+<!--                android:inputType="number"-->
+<!--                android:maxLength="1" />-->
+<!--        </com.simple.vclayout.VerCodeLayout>-->
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

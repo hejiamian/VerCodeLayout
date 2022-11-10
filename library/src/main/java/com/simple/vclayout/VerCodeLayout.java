@@ -14,8 +14,6 @@ import java.util.List;
 
 public class VerCodeLayout extends LinearLayout {
 
-    public static final String TAG = "VerCodeLayout";
-
     protected List<EditText> mEditTexts;
     private OnCompleteListener mOnCompleteListener;
 
@@ -69,7 +67,6 @@ public class VerCodeLayout extends LinearLayout {
 
         public InnerKeyListener(EditText editText) {
             this.innerEditText = editText;
-            this.maxLength = Utils.getMaxLength(editText);
         }
 
         @Override
@@ -91,7 +88,7 @@ public class VerCodeLayout extends LinearLayout {
 
         public InnerTextWatcher(EditText editText) {
             innerEditText = editText;
-            this.maxLength = Utils.getMaxLength(editText);
+            this.maxLength = 1;
         }
 
         @Override
@@ -146,15 +143,7 @@ public class VerCodeLayout extends LinearLayout {
             preEditText.setEnabled(true);
             preEditText.requestFocus();
 
-            int preMaxLength = Utils.getMaxLength(preEditText);
-            if (preMaxLength == 1) {
-                preEditText.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        preEditText.setText("");
-                    }
-                });
-            }
+            preEditText.post(() -> preEditText.setText(""));
 
             if (autoFocus) {
                 focusEditText.setEnabled(false);

@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.text.InputFilter;
 import android.text.InputType;
 import android.util.AttributeSet;
@@ -15,6 +16,10 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.widget.TextViewCompat;
 
 public class VerCodeEditText extends VerCodeLayout {
 
@@ -142,14 +147,26 @@ public class VerCodeEditText extends VerCodeLayout {
         }
         editText.setTextColor(mTextColor);
         if (mTextCursorDrawable != -1) {
-            Utils.setTextCursorDrawable(editText, mTextCursorDrawable);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                editText.setTextCursorDrawable(mTextCursorDrawable);
+            }
         }
-        editText.setFilters(new InputFilter[]{new InputFilter.LengthFilter(mMaxLength)});
+
         editText.setGravity(Gravity.CENTER);
         editText.setMinWidth(mMinWidth);
         editText.setMinHeight(mMinHeight);
         editText.setGravity(mGravity);
         editText.setInputType(mInputType);
+
+        VerCodeInputFilter inputFilter = new VerCodeInputFilter(text -> {
+            for (int i = 0; i < text.length(); i++) {
+                View child = getChildAt(i);
+                if (child instanceof EditText) {
+                    ((EditText) child).setText(String.valueOf(text.charAt(i)));
+                }
+            }
+        });
+        editText.setFilters(new InputFilter[]{inputFilter});
     }
 
     private void setBackground(EditText editText) {
